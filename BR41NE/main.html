@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BR41NE Dating site.</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<script>
+ var i = 0, text;
+text = "Welcome to BR41NE Dating Site."
+
+function typing() {
+
+ if (i < text.length) {
+    var a = document.getElementById("text")
+    a.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 10);
+
+  }
+}
+onload=typing;
+</script>
+</head>
+<body>
+	<header id="header" class="topnav">
+		<div id="navbar">
+<!-- The navigation menu -->
+	<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <a href="error.html">About</i></a>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn" onclick="open">blog</i></button>
+    <div class="subnav-content">
+      <a href="error.html" onclick="open">Hook ups</a>
+      <a href="error.html">Dates</a>
+      <a href="error.html" onclick="open">Friends</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Services</i></button>
+    <div class="subnav-content">
+      <a href="sign up.html">Bookings</a>
+      <a href="sign up.html">Registration</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <a href="error.html">Current Programs</i></a>
+  </div>
+  <a href="error.html">Contact</a>
+</div>
+<div id="tfheader">
+   <form id="tfnewsearch" method="get" action="http://www.google.com">
+          <input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search on our website..." style="height: 10%; border-radius: 10px"><input type="submit" value="search" class="tfbutton2"size="21" style="height: 10%; border-radius: 10px">
+  </form>
+  <div class="tfclear"></div>
+ </div>
+</div>
+	</header>
+<br>
+		<i> <div id="text" style="background-color: black; color: orange;"></div></i>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <b>
+		 	<table style="background-color: orange; font-size: 30px;" align="center" class="bhim">
+		 	<tr align="center">
+			 	<td align="center">
+			 		<br>
+			 		Services are currently not available at the moment. Kindly visit some other time. Thank you. 
+			 		<br>
+					<button style="width: 30%; background-color: yellow; border-radius: 40px; color: violet"><h1 align="center"><a href="home.html" class="submit" align="center" style="text-decoration: none">Log out </a></h1></button>			 		<br>
+			 	</td>
+			 </tr>
+		 </table></b>
+		 <i>
+		 	<b>
+		 		<div id="watermark">@BR41NE Inc.</div>
+		 	</b>
+		 </i>
+</body>
+</html>

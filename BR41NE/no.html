@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BR41NE Dating site.</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<script>
+ var i = 0, text;
+text = "Thank you for trying out BR41NE dating site but as it stands it looks like we cannot be of any assistance to you. YOU can click on our home tab to get more information or exit the site. Thank you very much for visiting our site. Please do well to visit our site anytime. we are grateful for you visit. follow us on all social media platforms @BR41NE_Inc or send us a direct mail at br41ne_inc21@gmail.com"
+
+function typing() {
+
+ if (i < text.length) {
+    var a = document.getElementById("text")
+    a.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 30);
+
+  }
+}
+onload=typing;
+</script>
+</head>
+<body>
+	<header id="header" class="topnav">
+		<div id="navbar">
+<!-- The navigation menu -->
+	<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <a href="error.html">About</i></a>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn" onclick="open">blog</i></button>
+    <div class="subnav-content">
+      <a href="error.html" onclick="open">Hook ups</a>
+      <a href="error.html" onclick="open">Dates</a>
+      <a href="error.html" onclick="open">Friends</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Services</i></button>
+    <div class="subnav-content">
+      <a href="sign up.html" onclick="open">Bookings</a>
+      <a href="sign up.html">Registration</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <a href="error.html">Current Programs</i></a>
+  </div>
+  <a href="error.html">Contact</a>
+</div>
+<div id="tfheader">
+   <form id="tfnewsearch" method="get" action="http://www.google.com">
+          <input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search on our website..." style="height: 10%; border-radius: 10px"><input type="submit" value="search" class="tfbutton2"size="21" style="height: 10%; border-radius: 10px">
+  </form>
+  <div class="tfclear"></div>
+ </div>
+</div>
+	</header>
+<header id="header1" class="topnav1">
+		<b><div id="navbar" class="navbar1" style="height: 20%; border-radius: 10px; font-size: 20px; text-align: center; padding-top: 3px; padding-bottom: 3px">
+			Username : <input type="username" name="Username" placeholder="Username" style="height: 30px; font-size: 15px; border-radius: 5px; text-align: center;" >
+			password : <input type="password" name="password" placeholder="password" style="height: 30px; font-size: 15px; border-radius: 5px; text-align: center;">
+			<button class="signin" style="height: 30px; border-radius: 10px"><a href="main.html" style="text-decoration: none; color: black"><b>Sign In</b></a></button>
+		</div></b>
+</header>
+<br>
+<h1 style="font-size: 30px;" class="topnav"><strong><i>BR41NE Dating Site</i></strong></h1>
+		<i> <div id="text" style="background-color: black; color: orange;"></div></i>
+		 <br>
+		 <br>
+		 <br>
+		 <i>
+		 	<b>
+		 		<div id="watermark">@BR41NE Inc.</div>
+		 	</b>
+		 </i>
+</body>
+</html>

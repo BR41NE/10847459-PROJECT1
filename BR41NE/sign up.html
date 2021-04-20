@@ -1,0 +1,107 @@
+<?php
+    include_once 'contacts.php'
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Portal</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<script>
+ var i = 0, text;
+text = "Welcome to the registration portal."
+
+function typing() {
+
+ if (i < text.length) {
+    var a = document.getElementById("text")
+    a.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 10);
+
+  }
+}
+onload=typing;
+</script>
+</head>
+<body>
+	<header id="header" class="topnav">
+		<div id="navbar">
+<!-- The navigation menu -->
+	<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <a href="error.html">About</i></a>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn" onclick="open">blog</i></button>
+    <div class="subnav-content">
+      <a href="error.html" onclick="open">Hook ups</a>
+      <a href="error.html" onclick="open">Dates</a>
+      <a href="error.html" onclick="open">Friends</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Services</i></button>
+    <div class="subnav-content">
+      <a href="save.php">Bookings</a>
+      <a href="sign up.html">Registration</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <a href="error.html">Current Programs</i></a>
+  </div>
+  <a href="error.html">Contact</a>
+</div>
+<div id="tfheader">
+  <form id="tfnewsearch" method="get" action="http://www.google.com">
+          <input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search on our website..." style="height: 10%; border-radius: 10px"><input type="submit" value="search" class="tfbutton2"size="21" style="height: 10%; border-radius: 10px">
+  </form>
+  <div class="tfclear"></div>
+ </div>
+</div>
+	</header>
+<header id="header1" class="topnav1">
+		<b><div id="navbar" class="navbar1" style="height: 20%; border-radius: 10px; font-size: 20px; text-align: center; padding-top: 3px; padding-bottom: 3px">
+			Username : <input type="username" name="Username" placeholder="Username" style="height: 30px; font-size: 15px; border-radius: 5px; text-align: center;" >
+			password : <input type="password" name="password" placeholder="password" style="height: 30px; font-size: 15px; border-radius: 5px; text-align: center;">
+			<button class="signin" style="height: 30px; border-radius: 10px"><a href="main.html" style="text-decoration: none; color: black"><b>Sign In</b></a></button>
+		</div></b>
+</header>
+<br>
+<h1 style="font-size: 30px;" class="topnav"><strong><i>BR41NE Dating Site</i></strong></h1>
+		<i> <div id="text" style="background-color: black; color: orange;"></div></i>
+		 <br>
+		 <br>
+		 <br>
+		 <b><table style="background-color: orange; font-size: 30px; border-radius: 50px" align="center" class="bhim">
+		<td style="margin: 5px;">
+			<div class="main" align="center">
+   				 <h1> <p class="sign" align="center"><b>Sign Up</b><br></p></h1>
+   				 <form class="form1" method="post" action="index.php">
+   				 <label>Name: </label>
+   				 <input  class ="un" type="text" align="left" size="15" placeholder="Surname" name="Surname" style="font-size: 20px;text-align: center; height: 50px; border-radius: 10px" required name="Surname">  <input  class ="un" type="text" align="right" size="15" placeholder="Firstname" name="Firstname" style="font-size: 20px;text-align: center; height: 50px; border-radius: 10px" required><br><br>
+     			 <br>
+     			 <label>Username: </label>
+     			 <input  class ="un" type="text" align="center" size="30" name="username" placeholder="Username" style="font-size: 20px;text-align: center; height: 50px; border-radius: 10px" required><br><br>
+     			 <label>Password: </label>
+     			 <input class ="pass" name="password" type="password" align="center" size="30" placeholder="password" style="font-size: 20px;text-align: center; height: 50px; border-radius: 10px" minlength="8"  autofocus="autofocus" autocomplete="new-password" spellcheck="false" aria-describedby=" " aria-autocomplete="list" required autocomplete="off"><br><br>
+     			 <label>C_	password:</label>
+     			 <input class ="pass1" type="password" align="center" size="30" placeholder="confirm password" style="font-size: 20px;text-align: center; height: 50px; border-radius: 10px" required><br><br>
+     			 <label>Email: </label>
+     			 <input class ="mail" type="email" name="email" align="center" size="30" placeholder="email" style="font-size: 20px;text-align: center; height: 50px; border-radius: 10px" minlength="8" required>	
+      			<br><br><br>
+      			<button style="width: 30%; background-color: yellow; border-radius: 40px; color: green" onclick="submit" ><h1 align="center">Sign  Up</h1></button>
+      		</form>
+      		</div>
+		</td>
+
+		 </table></b>
+		 <i>
+		 	<b>
+		 		<div id="watermark">@BR41NE Inc.</div>
+		 	</b>
+		 </i>
+</body>
+</html>
